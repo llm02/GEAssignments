@@ -1,6 +1,6 @@
 package lessonExamples;
 
-//this is the Class Car.  it consists of
+	//this is the Class Car.  it consists of
 	//the Class VARIABLES (describes variables which define a given Car Class instance)
 
 	//the Class CONSTRUCTOR (Creates a new instance of the Car class)
@@ -10,6 +10,19 @@ package lessonExamples;
 	//the MAIN METHOD (All java applications begin with processing a main() method.   Each statement in the main() method is executed
 	//in order until the end is reached. When end is reached program terminates.
 
+	//public is a Java keyword which declares a member's access as public. Public
+	//members are visible to all other classes. This means that any other class can access 
+	//a public field or method. Further, other classes can modify public fields unless the 
+	//field is declared as final .
+
+	//private is a Java keyword which declares a member's access as private.
+	//outer classes cannot be private (Car is considered an outer class).
+	//Class members (variables, methods, constructors and inner classes that are part
+    //of a class) can be private.
+	//That means, the member is only visible within the class, not from any other class 
+	//(including subclasses). The visibility of private members extends to nested classes.
+	// In Object Oriented Programming we use this methodology to "encapsulate" the details
+	// of how a class operates so that it can be more easily coupled to other elements of code
 
 public class Car {
 	//Below are the Car class VARIABLES;
