@@ -17,10 +17,12 @@ package lessonExamples;
 
 	//private is a Java keyword which declares a member's access as private.
 	//outer classes cannot be private (Car is considered an outer class).
-	//Class members (variables, medhods, constructors and inner classes that are part
-    //of a class can be private.
+	//Class members (variables, methods, constructors and inner classes that are part
+    //of a class) can be private.
 	//That means, the member is only visible within the class, not from any other class 
 	//(including subclasses). The visibility of private members extends to nested classes.
+	// In Object Oriented Programming we use this methodology to "encapsulate" the details
+	// of how a class operates so that it can be more easily coupled to other elements of code
 
 public class Car {
 	//Below are the Car class VARIABLES;
