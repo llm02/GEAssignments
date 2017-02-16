@@ -24,6 +24,7 @@ package lessonExamples;
 	// In Object Oriented Programming we use this methodology to "encapsulate" the details
 	// of how a class operates so that it can be more easily coupled to other elements of code
 
+
 public class Car {
 	//Below are the Car class VARIABLES;
 	
