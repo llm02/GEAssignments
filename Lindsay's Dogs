@@ -1,0 +1,66 @@
+package LessonExample2;
+
+public class Dog {
+	//below are variables
+private int age;
+private String breed;
+private int weight; 
+private String activity; 
+
+//Below is constructor
+
+public Dog (int years, String type, int pounds, String action){
+	
+	age = years;
+	breed = type;
+	weight = pounds;
+	activity = action;
+}
+//Below are methods
+public void setage(int years){
+	age = years;
+}
+public void setbreed (String type){
+	breed = type;
+}
+public void setweight (int pounds){
+	weight = pounds; 
+}
+public void setactivity (String action){
+	activity = action; 
+}
+public int getage(){
+	return age;
+}
+public String getbreed(){
+	return breed;
+}
+public int getweight(){
+	return weight;
+}
+public String getactivity(){
+	return activity;
+}
+
+		//isn't this get return pattern redundant?? Shouldn't it know what to return from the constructor?
+
+// Below is Main Method
+
+public static void main(String [] args){
+	Dog[] newDog=new Dog[5]; 
+	
+	newDog[0] = new Dog(2,"PWD",50,"swim");
+	newDog[1] = new Dog (2, "Lab",100, "run");
+	newDog[2] = new Dog (10, "Doberman", 75, "eat");
+	newDog[3] = new Dog (1, "Yorkie", 20, "train");
+	newDog[4] = new Dog (13, "Retriever", 70, "rest"); 
+
+int DogNumber=0; 
+for(Dog a:newDog){
+	if (a!=null){
+		DogNumber=DogNumber+1; 
+				System.out.println("Dog Number" + DogNumber + " is a " +a.age+ " year old " +a.breed+ " it weighs " +a.weight + "lbs it should " +a.activity); 
+	}
+}
+}
+}
